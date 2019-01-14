@@ -1,0 +1,54 @@
+body {
+	padding-left: 15px;
+}
+h1 a {
+	color: #FF0000;
+}
+.page-header {
+	background-color: #FF0000;
+	margin-top: 0;
+	margin-bottom: 2px;
+	padding: 20px 20px 20px 40px;
+	text-align: center;
+	color: #FFFFFF;
+}
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active{
+	color: #FFFFFF;
+	font-size: 72pt;
+	text-decoration: none;
+}
+.page-header img{
+	margin-left: 15px;
+	height: 72px;
+	width: 72px;
+	align: center;
+	color: #FFFFFF;
+}
+.top-menu, .top-menu a, .top-menu a:visited{
+	color: #FF0000;
+	letter-spacing: 1px;
+	word-spacing: 5px;
+	margin-left: 10px;
+}
+.content{
+	margin-left: 40px;
+}
+h1,h2,h3,h4{
+	font-family:arial;
+}
+.date{
+	font-size: 9pt;
+	font-color: #828282;
+}
+.save{
+	float: right;
+}
+.post-form textarea, .post-form input{
+	width: 100%;
+}
+.post{
+	margin-bottom: 70px;
+}
+.post h1 a, .post h1 a:visited{
+	color: #000000;
+}

@@ -1,0 +1,40 @@
+{% load static %}
+<html>
+	<head>
+		<title>Teacher</title>
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="{% static 'css/teacher.css' %}">
+	</head>
+
+	<body>
+		<div class="page-header">
+		<div class="row">
+			<h1><a href="/">Teacher<img src="https://d.kisscc0.com/ds/65189abc80e3f3edfdd932ba470f0ea6/L3B1d7r1gfwwOmE2UKICMkOyg7r4TBtqe6Roe6I2Znn5dX73jBlvfJZpReV9YYKwg8Xokr1xd51Af9H3cz3sfn7okwQuaZ9pRdVAbIT4gra0hCJmgV54jNN7LUXlRYa9gfU4O2pnfNgBLkS7Qoe7UcIyOWY4SqU7NEW7Q4O6VsUveJ9s/kisscc0-five-pointed-star-star-polygons-in-art-and-culture-grey-star-5b556ae739bdf6.4826412115323245832365.png"></img></a></h1>
+			<p>Bem indo ao Teacher, seu consultor online de professores universitários.</p>
+		</div>
+		</div>
+		<div class="top-menu">
+			<div class="row">
+				<a href="/">Início</a>
+				<a href="/">Perfil</a>
+				<a href="/">Logout</a>
+			</div>
+		</div>
+		<div class"content container">
+			<div class="row">
+				<div class="col-md-8">
+					{% for pro in pros %}
+					<div class="pro">
+						<h1>{{pro.name}}</h1>
+						<h3>{{pro.institution}}</h3>
+						<p>Stars: {{pro.stars}}</p>
+						<div class="date">
+						<p>Publicado em: {{pro.published_date|linebreaksbr}}</p>
+						</div>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+</html>
